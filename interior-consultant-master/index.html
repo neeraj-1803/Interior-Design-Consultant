@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+    rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Devchallenges</title>
+</head>
+
+<body>
+  <div class="main-div">
+    <div class="navbar">
+      <div class="left-nav">
+        <a href="#">THIS INTERIOR</a>
+      </div>
+      <div class="right-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="active">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="toggle"></div>
+    </div>
+    <div class="main-section">
+      <div class="leftmain">
+        <h1>Modern Interior</h1>
+        <p>A full-Service residential & commercial interior design and staging company offering professional organizing
+          & eco-services.</p>
+        <a href="#">Read More -></a><i class="fas fa-long-arrow-alt-right" style="font-size:18px;color:white;"></i>
+      </div>
+      <div class="rightmain">
+        <div class="main-img">
+          <img class="bckg-img" src="/photo1.png" alt="background image">
+        </div>
+        <div class="creator">
+          <div class="creator-row">
+            <div class="creator-img">
+              <img class="profile-img" src="/photo2.png" alt="Alizia Webber">
+            </div>
+            <div class="creator-det">
+              <h3>Alizia Webber</h3>
+              <h4>Interior Designer</h4>
+            </div>
+          </div>
+          <h1>Designed in 2020 by<br>Alizia Webber</h1>
+        </div>
+      </div>
+    </div>
+    <div class="footer-det">
+      <p>created by <b><u>Neeraj Dwivedi</u></b> - Devchallenges.io</p>
+    </div>
+  </div>
+  <script>
+    document.querySelector(".toggle").addEventListener("click", (element)=>{
+      element.target.classList.toggle("activetoggle");
+      document.querySelector(".active").classList.toggle("activeDisplay");
+    })
+  </script>
+</body>
+
+</html>
